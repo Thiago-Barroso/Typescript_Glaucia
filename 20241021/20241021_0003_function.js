@@ -31,3 +31,12 @@ console.log(numeros.sort(function (a, b) { return a - b; }));
 //Function Constructor
 var saudar = new Function("Mensagem", 'return "Fala, " + Mensagem');
 console.log(saudar("Pessoal"));
+//Rest Parameter
+function somarNumeros() {
+    var numeros = [];
+    for (var _i = 0; _i < arguments.length; _i++) {
+        numeros[_i] = arguments[_i];
+    }
+    console.log(numeros);
+}
+somarNumeros(1, 2, 3);

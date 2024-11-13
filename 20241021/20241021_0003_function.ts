@@ -37,3 +37,16 @@ console.log(numeros.sort((a,b) => a - b));
 //Function Constructor
 const saudar = new Function("Mensagem",'return "Fala, " + Mensagem');
 console.log(saudar("Pessoal"));
+
+
+//Rest Parameter
+
+function somarNumeros(...numeros:number[]){
+    let soma:number = 0;
+    for(numero of numeros){
+        soma += numero;
+    }
+    return soma;
+}
+
+

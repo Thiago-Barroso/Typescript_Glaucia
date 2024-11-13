@@ -24,16 +24,21 @@ const filho:Filho = {
 
 interface Gato {
     tipo:string,
+    miado:string;
 }
 
 interface Cao {
-    tipo:string
+    tipo:string,
+    latido:string
+
 }
 
 type Animal = Cao & Gato;
 
 const animal1:Animal = {
     tipo: "Cao",
+    miado:"miau",
+    latido:"Auau"
 }
 
 
